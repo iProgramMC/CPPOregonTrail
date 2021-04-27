@@ -85,12 +85,12 @@ void TrailPlayer::AdvanceGameClock(int days) {
 				m_day = 1;
 				m_month++;
 			}
-			OnConsumeFood();
-			RandomSicknessOccurs();
-			RandomEventOccurs();
 			days--;
 		}
 	}
+	OnConsumeFood();
+	RandomSicknessOccurs();
+	RandomEventOccurs();
 }
 
 void TrailPlayer::OnTravel() {
